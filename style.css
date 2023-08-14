@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root Styles  */
+
+:root {
+  --heading: "Montserrat", sans-serif;
+  --subheading: "Poppins", sans-serif;
+  --body: "Open Sans", sans-serif;
+  --links: "Quicksand", sans-serif;
+  --cta: "Roboto", sans-serif;
+}
+
+/* default styles  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ccGray);
+  color: white;
+}
+
+.inner-container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1500px) {
+  .inner-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
+
+/* Heading and font styles  */
+
+.heading,
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.subheading,
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.largeText,
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.mediumText,
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.baseText,
+p,
+ul,
+li,
+a,
+label,
+input,
+textarea {
+  font-size: 18px;
+  font-weight: normal;
+}
+.smallText {
+  font-size: 14px;
+  font-weight: 400;
+}
+.extraSmallText {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .heading,
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .subheading,
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .largeText,
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .mediumText,
+  h4 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .baseText,
+  p,
+  ul,
+  li,
+  a,
+  label,
+  input,
+  textarea {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .smallText {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .extraSmallText {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading,
+  h1 {
+    font-size: 38px;
+  }
+  .subheading,
+  h2 {
+    font-size: 34px;
+    font-weight: 600;
+  }
+
+  .largeText,
+  h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .mediumText,
+  h4 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .baseText,
+  p,
+  ul,
+  li,
+  a,
+  label,
+  input,
+  textarea {
+    font-size: 22px;
+  }
+
+  .smallText {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .extraSmallText {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1601px) {
+  .heading,
+  h1 {
+    font-size: 42px;
+  }
+
+  .subheading,
+  h2 {
+    font-size: 38px;
+    font-weight: 600;
+  }
+
+  .largeText,
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .mediumText,
+  h4 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .baseText,
+  p,
+  ul,
+  li,
+  a,
+  label,
+  input,
+  textarea {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 2em;
+  }
+
+  .smallText {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .extraSmallText {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+/* !Animation Styles   */
+
+.reveal-item {
+  clip-path: polygon(0 0, 33% 0, 0 100%, 0% 100%);
+  opacity: 0;
+}
+
+.swipe-item {
+  transform: translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* !Theme layout Styles */
